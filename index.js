@@ -1,7 +1,7 @@
 class Session {
 	constructor(config) {
 		this.workSessionsCounter = 0;
-		this.initialTime = 1;
+		this.initialTime = 40 * 60;
 		this.sessionsCounter = 0;
 		this.displayElement = config.displayElement;
 
@@ -56,9 +56,9 @@ const notifiaction = new Audio("./assets/notification.wav");
 
 
 // defining sessions times
-let workSessionTime = 1;
-let shortBreakTime = 1;
-let longBreakTime = 10;
+let workSessionTime = 40 * 60;
+let shortBreakTime = 5 * 60;
+let longBreakTime = 15 * 60;
 
 // starting the timer
 session = new Session({
