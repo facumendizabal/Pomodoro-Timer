@@ -75,6 +75,7 @@ const restartSession = () => {
 	session.setDisplayTime(session.initialSecToTime());
 	session.sessionsCounter = 0;
 	session.workSessionsCounter = 0;
+	sessionType.innerHTML = "Work!";
 	sessionsDots.forEach(dot => {
 		dot.style.backgroundImage = "url('./assets/icons/circule.svg')";
 	});
