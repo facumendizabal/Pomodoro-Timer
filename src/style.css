@@ -14,10 +14,11 @@ body {
 	background-color: #323031;
 }
 
-
 /* Main container */
 
 .main-container {
+	min-width: 320px;
+	min-height: 500px;
 	position: absolute;
 	top: 45%;
 	left: 50%;
@@ -72,23 +73,40 @@ body {
 /* Buttons */
 
 .buttons {
-	min-width: 300px;
 	margin-top: 30px;
 	display: flex;
 	justify-content: space-around;
-	font-size: 1.8rem;
+	align-items: center;
+	font-size: 1.6rem;
 	font-weight: 400;
 	text-align: center;
 }
 
 .buttons div {
-	width: 100px;
+	width: 80px;
 	height: 50px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background-color: #ff6a41;
 	border-radius: 3px;
+}
+
+.buttons .buttons__play {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+}
+
+.buttons .buttons__play span {
+	margin-left: 0px;
+	width: 33px;
+	height: 37px;
+	display: inline-block;
+	background-image: url("./assets/icons/play.svg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .buttons div:hover {
@@ -117,7 +135,6 @@ body {
 .settings input {
 	width: 30px;
 	margin: 0 15px 0 10px;
-	
 	background: none;
 	border: none;
 	border-bottom: 1px solid #e6d7d7;
