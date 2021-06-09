@@ -25,14 +25,17 @@ class Session {
 	}
 
 	tooglePlay() {
-		if (this.timer.getStatus() === "initialized" || this.timer.getStatus() === "stopped") {
-			this.timer.start(this.initialTime);
-		} else if (this.timer.getStatus() === "started") {
-			this.timer.pause();
-		} else if (this.timer.getStatus() === "paused") {
-			this.timer.start();
-		}
-	}
+    if (
+      this.timer.getStatus() === "initialized" ||
+      this.timer.getStatus() === "stopped"
+    ) {
+      this.timer.start(this.initialTime);
+    } else if (this.timer.getStatus() === "started") {
+      this.timer.pause();
+    } else if (this.timer.getStatus() === "paused") {
+      this.timer.start();
+    }
+  }
 
 	stop() {
 		this.timer.stop();
