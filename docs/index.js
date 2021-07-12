@@ -157,7 +157,7 @@ session.timer.on("end", () => {
   if (session.sessionsCounter === 15) {
     window.location.reload();
   } else if (session.sessionsCounter === 6) {
-    //changing the time and the dom after the dom in the end of a work session and checking if its time for a long break
+    //changing the time and the dom after the end of a work session and checking if its time for a long break
     session.initialTime = longBreakTime;
     session.setDisplayTime(session.initialSecToTime());
 
