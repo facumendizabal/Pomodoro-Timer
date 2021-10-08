@@ -59,7 +59,7 @@ const notifiaction = new Audio("./assets/notification.wav");
 
 // defining sessions times
 let workSessionTime = 40 * 60;
-let shortBreakTime = 5 * 60;
+let shortBreakTime = 10 * 60;
 let longBreakTime = 15 * 60;
 
 // starting the timer
